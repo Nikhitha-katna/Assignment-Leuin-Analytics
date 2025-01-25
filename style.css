@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    color: rgb(10, 10, 10);
+
+}
+body {
+  background-color: rgb(221, 180, 31);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(3, 3, 3);
+    overflow: auto;
+ }
+ ::-webkit-scrollbar {
+  display: none;
+}
+
+ .navbar {
+    position: relative;
+    z-index: 9;
+    background-color : rgb(240, 239, 235);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+   border-radius: 10px;
+  }
+  .logo img {
+    height: 45px;
+    width: 70px;
+    border-radius: 10px;
+  }
+  .logo:hover {
+    transform: scale(1.1);
+  }
+
+  .nav-links {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 10px;
+  }
+  .nav-links :hover {
+  color: rgb(221, 180, 31);
+  font-weight: 900;
+  
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #1e1d1d;
+    font-weight: 500;
+    font-size: 16px;
+    
+  }
+  .droptext {
+    text-align: center;
+    color: #1e1d1d;
+    padding: 5px;
+    font-weight: 100;
+  }
+  .droptext  i {
+    color: #f90404;
+  }
+  .dropdown {
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #fcfafa;
+    color: #060606;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 12px;
+    border: 3px solid rgb(160, 155, 155);
+    font-weight: 400;
+    cursor: pointer;
+  }
+  #locationInfo {
+    color: black;
+    font-size: 12px;
+  }
+
+  .heroimg img {
+    height: 450px;
+    width: 550px;
+    margin-right: 20px;
+    border-radius: 20%;
+    
+  }
+  .hero {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+  }
+  .herotext  {
+    text-align: center;
+    margin: 50px;
+    margin-top: 150px;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+  .herotext h2 {
+    padding: 15px;
+    font-style: italic;
+  }
+  .herotext h4 {
+    font-weight: 300;
+    padding: 20px;
+    font-style: oblique;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(221, 180, 31);
+  }
+  #i1 {
+    color: rgb(250, 104, 6);
+   
+  }
+  #i2 {
+color: rgb(12, 115, 232);
+  }
+  #i3 {
+    color: rgb(190, 12, 234);
+  }
+#herobtn{
+  height: 45px;
+  width: 390px;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: rgb(162, 11, 232);
+  color: rgb(241, 243, 245);
+  padding: 5px;
+  font-weight: 800;
+  cursor:pointer;
+  margin-left: 10%;
+  text-align: center;
+}
+.herobtn:hover{
+  transform: scale(1.1);
+}
+
+.cardhead {
+  text-transform: capitalize;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+ 
+}
+.main-title {
+  text-transform: capitalize;
+  margin-left: 40px;
+  margin: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-style: italic;
+  width: 100%;
+  display: block;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 18px;
+  width: full;
+  
+}
+.card {
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 18%;
+  height: 200px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 15px;
+}
+.card:hover {
+  transform: scale(1.1);
+  
+}
+ .card img {
+  margin: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 100px;
+
+ }
+
+ .cardbody {
+  
+  cursor: default;
+  background-color: #dfd9d9;
+  font-size: 13px;
+  padding: 10px;
+  text-align: center;
+ 
+ }
+ .card-title {
+  text-transform: capitalize;
+  padding: 5px;
+  font-size: 15px;
+ 
+ }
+
+ .cardbody button {
+  color: rgb(6, 6, 6);
+  cursor: pointer;
+  margin: 5px;
+  width: 80px;
+  border-radius: 30px;
+  border: none;
+ }
+ /* antique museum */
+ .museum {
+  display: flex;
+  flex-direction: row;
+  margin: 60px;
+  gap: 20px;
+  justify-content: space-around;
+ }
+ 
+ #antiqueMobility {
+  height: 200px;
+  width: 600px;
+
+  background-color: #020202;
+  border-radius: 20px;
+  justify-content: center;
+  padding: 10px;
+  border: 5px solid rgb(249, 248, 248);
+ 
+ }
+ #antiqueMobility :hover {
+  transform: scaleY(1.1);
+ }
+ 
+ #antiqueMobility h4 , p {
+  color: rgb(250, 246, 246);
+ }
+ #antiqueMobility p {
+  color: rgb(247, 245, 245);
+ }
+ #antiqueMobility h4{
+  margin: 10px;
+ }
+ #antiqueMobility span {
+  font-weight: 800;
+  color: rgb(247, 245, 245);
+ }
+
+.app-icons{
+  height: 200px;
+  width: 600px;
+  background-color: #050505;
+  border-radius: 20px;
+  padding: 10px;
+  align-items: center;
+  border: 5px solid rgb(249, 248, 248);
+
+}
+.app-icons h4 {
+  margin: 10px;
+  color: rgb(248, 247, 247);
+}
+
+.app-icons  img{
+   height: 100px;
+   padding: 20px;
+   background-color: black;
+   border-radius: 50%;
+   
+}
+.app-icons a :hover {
+  transform: scale(1.1);
+  
+}
+/* bottom-btn */
+
+.bottom-btn {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+/* signup */
+.form-container {
+  background-color: #f6d42c;
+  border: 2px solid white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+ align-items: center;
+ height: 250px;
+ margin-left: 35%;
+}
+h4 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #100f0f;
+}
+.nametext{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  height: 30px;
+  text-align: center;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  height: 30px;
+  text-align: center;
+}
+.signinbtn {
+  width: 100%;
+  padding: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 30px;
+  text-align:center;
+}
+button:hover {
+  background-color: #0056b3;
+}
+p {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+
+/* backbtn */
+
+.backtotop {
+  border: none;
+  height: 40px;
+  width: 110px;
+  background-color: #020202;
+  color: aliceblue;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  top: 50%;
+  left: 5%;
+  cursor: pointer;
+ 
+  
+}
+
+
+
+ /* footer */
+ footer{
+  position: relative;
+  left: 0%;
+  margin-top: 10%;
+  margin-right: 5%;
+  height: 250px;
+  width: 100%;
+  background-color:rgb(240, 239, 235); 
+  color: #080808;
+ 
+  
+}
+.footer-text {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  margin-bottom: 2.3%;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+}
+.footer-links{
+  font-size: 13px;
+  margin-left: 125px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.footer-links li {
+  list-style-type: none;
+  cursor: pointer;
+  font-weight: 550;
+  padding: 5px;
+}
+.footer-links i {
+  font-size: 26px;
+  margin-right: 240px;
+ 
+}
+
+/* css for details overview page */
+
+.exp-head{
+  text-align: center;
+}
+.exp-maincontainer{
+  display: flex;
+  flex-direction: row;
+  height: 465px;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+ 
+ 
+  
+}
+
+.exp-container{
+  background-color: #fcfafa;
+  padding: 20px;
+  border: 5px solid rgb(5, 5, 5);
+  border-radius: 10px;
+  margin: 20px;
+  height: 405px;
+  width: 587px;
+}
+.exp-container p, h4,strong,h3 {
+  color: rgb(9, 9, 9);
+}
+
+.exp-des{
+  padding: 10px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.exp-down{
+ margin-left: 35%;
+ border: none;
+ width: 150px;
+ height: 25px;
+ border-radius: 5px;
+ margin: 5px;
+}
+.exp-down a{
+  text-decoration: none;
+}
+.exp-rr{
+  margin-left: 0%;
+}
+#name {
+  border-radius: 5px;
+  position: relative;
+  bottom: 30px;
+ 
+}
+
+#feedback{
+ border-radius: 5px;
+}
+#exp-feedback{
+  border-radius: 5px;
+  position: relative;
+  bottom: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.backtohome{
+  border: none;
+  height: 40px;
+  width: 110px;
+  background-color: #020202;
+  color: aliceblue;
+  border-radius: 10px;
+  
+  padding: 5px;
+  position: relative;
+  top: 50%;
+  left: 5%;
+  cursor: pointer;
+}
+  
+
+
+/* responsiveness */
+
+

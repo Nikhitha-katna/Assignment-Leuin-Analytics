@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moibility Aggregator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body >
+    <header>
+        <nav class="navbar">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="images/mobility.logo.png" alt="Logo" />
+          </div>
+          
+          <!-- Navigation links -->
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+          </ul>
+
+          <ul class="nav-links">
+            <li><a href="details.html">Explore More</a></li>
+          </ul>
+          <!-- Dropdown -->
+           <div>
+            <p class="droptext"> <i class="fa-solid fa-location-dot"> &nbsp; </i>Choose location</p>
+            
+         <select class="dropdown" onchange="updateAppList(this.value);">
+            
+            <option value="Delhi" selected id="defaultdelhi">Delhi</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Shimla">Shimla</option>
+            <option value="Chandighar">Chandighar</option>
+
+         </select>
+        
+        </div>
+        </nav>
+      </header>
+      <!----------------- Hero section -------------- -->
+      <main>
+
+        <div class="hero">
+           <div class="heroimg">
+             <img src="images/hero1.png" alt="slideimg">
+           </div>
+            <div class="herotext">
+                <h2>connecting you to the best mobility solutions  across india</h2>
+                 <div class="icons">
+                   <i class="fa-solid fa-mobile-screen-button">&nbsp;&nbsp;</i>
+                    <i class="fa-solid fa-arrow-right">&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <div >
+                    <i class="fa-solid fa-car" id="i1">&nbsp;&nbsp;</i>
+                     <i class="fa-solid fa-person-biking " id="i2">&nbsp;&nbsp;</i>
+                     <i class="fa-solid fa-van-shuttle" id="i3">&nbsp;&nbsp;</i>
+                 </div>
+               </div>
+             <h4>find cabs,bikes,autos and more tailored to your city.discover services and explore new ways to move around with ease</h4>
+             <p id="herobtn"> Choose Location To Get Started</p>
+        </div>
+      </div>
+       <br>
+
+      </main>
+
+
+      <!-- div to display cards -->
+<div id="appList" class="app-list" style="display: none;">
+  <!-- App cards will be populated here dynamically -->
+</div>
+
+
+      
+
+      <!-- Antique Mobility Museum Section  and icons-->
+
+   <div class="museum">
+      <div id="antiqueMobility" >
+          <h4>Antique Mobility Museum</h4>
+          <p> <span>Do You know?</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo laboriosam saepe adipisci quasi consequuntur quo magnam iure? Id, accusamus?
+      
+          </p>
+      </div>
+      
+       
+        <div class="app-icons">
+          <h4>Popular Mobility Apps</h4>
+            <a href="https://www.uber.com" target="_blank"><img src="images/ubericon.png" alt="Uber" title="Uber"  /></a>&nbsp;
+            <a href="https://www.olacabs.com" target="_blank"><img src="images/olaicon.png" alt="Ola" title="Ola" /></a>
+            &nbsp;
+            <a href="https://www.rapido.bike/" target="_blank"><img src="images/rapidoicon.png" alt="Ola" title="Ola" /></a>
+        </div>
+     </div>
+
+
+      <!-- signupform -->
+    <div class="form-container">
+      <h4> SignUp To Stay Updated On Mobility Options</h4>
+      <form  id="submitForm" action="/submit-form" method="POST">
+        <input type="text" placeholder="Enter Yor Name"  class="nametext" required>
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit" class="signinbtn">Subscribe</button>
+      </form>
+      <p>Subscribe to receive updates on the latest mobility options and innovations.</p>
+  </div>
+
+     <!-- signuptn and back to top -->
+
+     <div class="bottom-btn">
+
+        <div >
+           <a href="#"> <button class="backtotop">Back To Top</button></a>
+        </div>
+    </div>
+
+   
+
+   
+<!-- footer -->
+      <footer >
+
+        <div class="footer-container"> 
+             <div class="footer-text">
+               <h4>company</h4>
+               <h4>view website in</h4>
+               <h4>need help?</h4>
+               <h4>connect with us</h4>
+
+              
+             </div>   
+
+             <div class="footer-links">
+              <ul>
+                <li>Home</li>
+                <li>Aboutus</li>
+                <li>Safety</li>
+                <li>careers</li>
+                <li>Privacy Policy</li>
+                
+              </ul>
+
+              <a href="#" id="visit">visit help center</a>
+
+              <a href="#"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;<i class="fa-brands fa-x-twitter"></i></a>
+             
+                
+            
+
+             </div>
+             
+            
+       </div> 
+     </footer>
+     <script src="script.js"></script>
+</body>
+</html>
